@@ -7,7 +7,7 @@ Enzyme.configure({adapter: new Adapter()});
 /**
  * Factory function to create a ShallowWrapper for the App Component
  * @function setup
- * @param {object} props 
+ * @param {object} props -Initial props for setup
  * @param {object} state -Initial state for setup
  * @returns {ShallowWrapper}
  */
