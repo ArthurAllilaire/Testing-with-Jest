@@ -28,9 +28,11 @@ const findByTestAttr = (wrapper, val)=>{
   return wrapper.find(`[data-test="${val}"]`);
 }
 test('renders without crashing', () => {
-  //Shallow
+  //Shallow wrapper used
   const wrapper = setup();
+  //Test attribute ued
   const appComponent = findByTestAttr(wrapper,'component-app')
+  //Throws error if not right
   expect(appComponent.length).toBe(1);
 });
 test('renders increment button', () => {
